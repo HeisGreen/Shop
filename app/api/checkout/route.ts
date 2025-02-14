@@ -58,8 +58,8 @@ try {
     const session = await stripe.checkout.sessions.create({
         line_items: stripeProducts,
         mode: 'payment',
-        success_url: `https://shop-mwrmjltqi-chidos-projects-a434f02e.vercel.app/success`,
-        cancel_url: `https://shop-mwrmjltqi-chidos-projects-a434f02e.vercel.app/`,
+        success_url: `https://vercel.com/chidos-projects-a434f02e/shop/4FmGs96ghfKPcTVb6wx7BRG68Fm8/success`,
+        cancel_url: `https://vercel.com/chidos-projects-a434f02e/shop/4FmGs96ghfKPcTVb6wx7BRG68Fm8/`,
     });
 
     return NextResponse.json({
