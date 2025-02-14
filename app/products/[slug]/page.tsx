@@ -1,3 +1,4 @@
+
 import React from 'react'
 import {Navbar, ProductDetails} from "@/app/components";
 import {client} from "@/sanity/lib/client";
