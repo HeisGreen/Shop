@@ -10,7 +10,7 @@ const fetchProduct = async (slug: string) => {
     return products.find((product: any) => product.slug.current === slug);
 };
 
-const page = async ({ params }: { params: { slug: string } }) => {
+const page = async ({ params }) => {
     const product = await fetchProduct(params.slug);
 
     if (!product) {
