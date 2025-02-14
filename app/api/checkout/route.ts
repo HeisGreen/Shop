@@ -58,8 +58,8 @@ try {
     const session = await stripe.checkout.sessions.create({
         line_items: stripeProducts,
         mode: 'payment',
-        success_url: `https://vercel.com/chidos-projects-a434f02e/shop/4FmGs96ghfKPcTVb6wx7BRG68Fm8/success`,
-        cancel_url: `https://vercel.com/chidos-projects-a434f02e/shop/4FmGs96ghfKPcTVb6wx7BRG68Fm8/`,
+        success_url: `https://shop-beige-delta.vercel.app/success`,
+        cancel_url: `https://shop-beige-delta.vercel.app/`,
     });
 
     return NextResponse.json({
