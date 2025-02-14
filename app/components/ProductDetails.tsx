@@ -48,10 +48,12 @@ const ProductDetails = ({product}:any) => {
                     <div className="flex flex-col gap-4">
                         <div className="text-3xl font-bold">{product.name}</div>
                         <div className="tex-xl font-medium">${product.price}</div>
+                        <h3 className={"font-bold"}>Description</h3>
+                        <div>{product.description}</div>
                     </div>
                     <div className="flex gap-2 items-center">
                         <h3>Quantity</h3>
-                        <p className="quantity-desc flex items-center border-black">
+                        <p className="quantity-desc flex items-center border-black rounded-xl">
                             <span className="minus"
                                   onClick={decQty}
                             >
