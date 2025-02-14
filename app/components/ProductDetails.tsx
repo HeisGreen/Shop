@@ -28,9 +28,10 @@ const ProductDetails = ({product}:any) => {
                         />
                     </div>
                     {/*bottom*/}
-                    <div className="small-images-container">
+                    <div  className="small-images-container">
                         {product.images?.map((item:any, i:number)=> (
                             <Image
+                                key={i}
                                 loader={() => urlFor(product.images[i]).url()}
                                 src={urlFor(product.images[i]).url()}
                                 alt={product.images[0]}
